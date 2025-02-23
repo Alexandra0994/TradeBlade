@@ -1,0 +1,59 @@
+.numbersSection {
+    position: relative;
+    margin: 0 auto;
+    max-width: var(--maxWidth);
+}
+
+.d {
+    position: relative;
+    width: 100%;
+    height: 26px;
+    top: -2px;
+    clip-path: polygon(0 0, min(1280px, 70vw) 0, 100% 155px, min(1600px, 120vw) 100vh, 0 100%);
+    overflow: hidden;
+    background-color: var(--titleBlack);
+
+    @media (min-width: 769px) {
+        height: 62px;
+        top: -2px;
+        clip-path: polygon(0 0, 357px 0, 420px 60px, 1224px 1160px, 0 100%);
+        overflow: hidden;
+    }
+}
+
+.container {
+    padding: 16px;
+}
+
+.title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #000;
+}
+
+.date {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 16px;
+}
+
+.stats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.statBlock {
+    flex: 1 1 45%;
+}
+
+.statLabel {
+    font-size: 14px;
+    color: #555;
+}
+
+.statValue {
+    font-size: 24px;
+    font-weight: bold;
+    color: #6A54FF;
+}
